@@ -2,7 +2,7 @@ Required libraries are-
 
 EasyOCR
 pylab
-googletrans
+googletrans (3.1.0a0)
 geopy
 geocoder
-IP Webcam application on your mobile
+IP Webcam application (on your mobile)
