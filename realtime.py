@@ -6,7 +6,7 @@ from pprint import pprint
 
 import cv2
 
-url = 'http://192.168.43.1:8080/video'
+url = 'URL/video' # enter the URL of the mobile
 webcam = cv2.VideoCapture(url)
 while True:
     try:
@@ -50,7 +50,7 @@ flang = input("Enter code of suspected foreign language:")
 
 print("Please wait....")
 reader = easyocr.Reader([flang, "en"])
-src_img = r"C:\Users\HARSH\Desktop\open cv\travelguide\saved_img.jpg"
+src_img = r"C:\Users\------\saved_img.jpg"  # path of the saved image, it usually saves in the same directory as the code
 Image(src_img)
 
 output = reader.readtext(src_img)
