@@ -6,11 +6,13 @@ from pprint import pprint
 
 import cv2
 
-url = 'URL/video' # enter the URL of the mobile
+url = 'IPv4/video' # enter the IP address from the mobile application
 webcam = cv2.VideoCapture(url)
+print("Press S to capture Q to quit")
 while True:
     try:
         check, frame = webcam.read()
+        
         print(check)  # prints true as long as the webcam is running
         print(frame)  # prints matrix values of each framecd
         cv2.imshow("Capturing", frame)
@@ -50,7 +52,7 @@ flang = input("Enter code of suspected foreign language:")
 
 print("Please wait....")
 reader = easyocr.Reader([flang, "en"])
-src_img = r"C:\Users\------\saved_img.jpg"  # path of the saved image, it usually saves in the same directory as the code
+src_img = r"C:\Users\------\saved_img.jpg"  # path of the saved image, usually the working directory
 Image(src_img)
 
 output = reader.readtext(src_img)
